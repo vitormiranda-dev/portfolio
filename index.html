@@ -14,6 +14,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
 
 </head>
 
@@ -24,11 +25,9 @@
     </div>
     <div class="floating-circle absolute top-[60%] right-20 w-8 h-8 border-2 border-[#00ff] rounded-full opacity-30"
       style="animation-delay: -2s"></div>
-    <div
-      class="floating-circle absolute bottom-20 left-[40%] w-12 h-12 border-2 border-[#00ff] rounded-full opacity-30"
+    <div class="floating-circle absolute bottom-20 left-[40%] w-12 h-12 border-2 border-[#00ff] rounded-full opacity-30"
       style="animation-delay: -4s"></div>
-    <div
-      class="floating-circle absolute top-[30%] left-[60%] w-10 h-10 border-2 border-[#00ff] rounded-full opacity-30"
+    <div class="floating-circle absolute top-[30%] left-[60%] w-10 h-10 border-2 border-[#00ff] rounded-full opacity-30"
       style="animation-delay: -1s"></div>
     <div
       class="floating-circle absolute top-[80%] right-[30%] w-14 h-14 border-2 border-[#00ff] rounded-full opacity-30"
@@ -54,32 +53,33 @@
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
       </button>
-
-<div class="mobile-menu">
+      <div class="mobile-menu">
         <div class="p-6 flex flex-col space-y-4">
           <a href="#home" class="text-[#00ff9d] hover:opacity-80 transition-opacity">HOME</a>
-          <a href="#about" class="hover:text-[#00ff9d] transition-colors">SOBRE</a> 
+          <a href="#about" class="hover:text-[#00ff9d] transition-colors">SOBRE</a> <!-- Corrigido para #about -->
           <a href="#skills" class="hover:text-[#00ff9d] transition-colors">EXPERIÊNCIA</a>
-         
+          <!-- Corrigido para #skills -->
           <a href="#technology" class="hover:text-[#00ff9d] transition-colors">TECNOLOGIAS</a>
           <a href="#portfolio" class="hover:text-[#00ff9d] transition-colors">PROJETOS</a>
           <a href="#contact" class="hover:text-[#00ff9d] transition-colors">CONTATO</a>
         </div>
       </div>
 
+
       <div class="menu-overlay"></div>
     </nav>
     </nav>
 
     <section id="home" class="mb-32 fade-in">
-    <div class="flex flex-col md:flex-row items-center gap-8">
-    <img src="minha foto.jpg" alt="Profile" class="w-64 h-64 rounded-full object-cover border-4 border-[#00ff] bg-transparent" />
-    <div>
-      <h1 class="text-4xl font-bold mb-4">
-        Olá, eu sou<br />
-        Vitor Miranda <span class="text-[#00ff9d]"></span><br />
-        Desenvolvedor Front-End.
-      </h1>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="minha foto.jpg" alt="Profile"
+          class="w-64 h-64 rounded-full object-cover border-4 border-[#00ff] bg-transparent" />
+        <div>
+          <h1 class="text-4xl font-bold mb-4">
+            Olá, eu sou<br />
+            Vitor Miranda <span class="text-[#00ff9d]"></span><br />
+            Desenvolvedor Front-End.
+          </h1>
           <div class="flex gap-4 mt-6">
             <a href="#" class="tech-icon">
               <img src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor
@@ -109,12 +109,12 @@
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg
                             " class="w-8 h-8" alt="tailwindcss" />
             </a>
-             <a href="#" class="tech-icon">
+            <a href="#" class="tech-icon">
               <img src="  https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg
                             " class="w-8 h-8" alt="bootstrap" />
             </a>
 
-          
+
           </div>
         </div>
       </div>
@@ -182,7 +182,7 @@
 
                 <div class="tech-card p-6 rounded-xl border border-gray-800 hover:border-[#00ff] transition-all">
                   <div class="flex items-start justify-between">
-                    <h4 class="font-bold mb-2 text-lg">Técnico em Eletroeletrônica</h4>
+                    <h4 class="font-bold mb-2 text-lg">Técnico em Eletroeletronica</h4>
                     <div class="px-3 py-1 bg-[#00ff9d]/10 rounded-full text-[#00ff9d] text-xs">
                       Concluído
                     </div>
@@ -238,7 +238,7 @@
                       class="w-6 h-6 tech-icon" alt="HTML" />
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
                       class="w-6 h-6 tech-icon" alt="tailwindcss" />
-                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                       class="w-6 h-6 tech-icon" alt="bootstrap" />
                   </div>
                 </div>
@@ -345,23 +345,24 @@
             <h2 class="text-2xl font-bold text-[#00ff] mb-2">PORTFÓLIO</h2>
             <p class="text-xl mb-8 text-gray-400">Confira meus projetos</p>
 
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div class="portfolio-card rounded-lg overflow-hidden fade-in">
                 <img src="estacionamento.png" alt="Project 2" class="w-full h-48 object-cover" />
                 <div class="p-6">
                   <h3 class="text-lg font-bold mb-2">Estacionamento</h3>
-                  <p class="text-gray-400 mb-1">Desenvolvimento do site da doceria WeCacau, criando uma plataforma
-                    visualmente atrativa e funcional para destacar os produtos da marca. Implementação de um design
-                    responsivo, alinhado à identidade visual da doceria, com navegação intuitiva e otimizada para
-                    diferentes dispositivos. Utilização de HTML, Tailwind e JavaScript para estruturar, estilizar e
-                    adicionar interatividade ao site, garantindo uma experiência envolvente ao usuário.</p> <br>
-                  <a href="https://vitormiranda-dev.github.io/Site-estacionamento/" target="_blank"
+                  <p class="text-gray-400 mb-1">É uma landing page voltada para a informações onde fica localizado o
+                    estacionamento da Associação comercial de São Roque. Aplicação de HTML, CSS, bootstrap para
+                    estruturação e interatividade, garantindo um layout harmonioso e funcional.</p> <br>
+                  <a href="https://github.com/vitormiranda-dev/Site-estacionamento" target="_blank"
                     class="w-7 h-7 bg-white rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                       class="w-6 h-6" alt="GitHub" />
+                  </a><br>
+                  <a href="https://vitormiranda-dev.github.io/Site-estacionamento/" target="_blank">
+                    <button type="button" class="btn btn-primary">Link do Projeto</button>
                   </a>
-                    <h1>Link do projeto</h1>
+                  
                 </div>
               </div>
 
@@ -371,32 +372,35 @@
                   <h3 class="text-lg font-bold mb-2">Café do Zé</h3>
                   <p class="text-gray-400 mb-1">Desenvolvimento do site da cafeteria, criando uma interface
                     moderna e atrativa para aprimorar a presença digital da marca. Implementação de um design
-                    responsivo, otimizado para navegação intuitiva e experiência do usuário. Aplicação de HTML, CSS, bootstrap e
+                    responsivo, otimizado para navegação intuitiva e experiência do usuário. Aplicação de HTML, CSS,
+                    bootstrap e
                     JavaScript para estruturação e interatividade, garantindo um layout harmonioso e funcional.</p> <br>
-                  <a href="https://vitormiranda-dev.github.io/Site-Cafeteria/" target="_blank"
+                  <a href="https://github.com/vitormiranda-dev/Site-Cafeteria" target="_blank"
                     class="w-7 h-7 bg-white rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                      class="w-6 h-6" alt="GitHub" /> 
+                      class="w-6 h-6" alt="GitHub" />
+                  </a> <br>
+                  <a href=" https://vitormiranda-dev.github.io/Site-Cafeteria/ " target="_blank">
+                    <button type="button" class="btn btn-primary">Link do Projeto</button>
                   </a>
-                   <h1>Link do projeto</h1>
+                 
 
                 </div>
               </div>
-               <div class="portfolio-card rounded-lg overflow-hidden fade-in">
+              <div class="portfolio-card rounded-lg overflow-hidden fade-in">
                 <img src="quiz programacao.png" alt="Project 2" class="w-full h-48 object-cover" />
                 <div class="p-6">
                   <h3 class="text-lg font-bold mb-2">Quiz de Programação</h3>
-                  <p class="text-gray-400 mb-1">Desenvolvimento do site da cafeteria, criando uma interface
-                    moderna e atrativa para aprimorar a presença digital da marca. Implementação de um design
-                    responsivo, otimizado para navegação intuitiva e experiência do usuário. Aplicação de HTML, CSS, bootstrap e
-                    JavaScript para estruturação e interatividade, garantindo um layout harmonioso e funcional.</p> <br>
-                  <a href="https://vitormiranda-dev.github.io/Projeto-Web-HTML/" target="_blank"
+                  <p class="text-gray-400 mb-1">É uma quiz de perguntas sobre programação </p> <br>
+                  <a href="https://github.com/vitormiranda-dev/Projeto-Web-HTML" target="_blank"
                     class="w-7 h-7 bg-white rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                      class="w-6 h-6" alt="GitHub" /> 
-                  </a>
-                   <h1>Link do projeto</h1>
+                      class="w-6 h-6" alt="GitHub" />
+                  </a><br>
 
+                  <a href="https://vitormiranda-dev.github.io/Projeto-Web-HTML/" target="_blank"><button type="button" class="btn btn-primary">Link do Projeto</button>
+                  
+                  </a>
                 </div>
               </div>
 
@@ -407,7 +411,7 @@
                   <p class="text-gray-400 mb-4">Projeto em desenvolvimento</p>
                 </div>
               </div>
-              
+
           </section>
 
           <section id="contact" class="mb-16 px-4 sm:px-6 lg:px-8">
@@ -548,8 +552,7 @@
                       <a href="#home" class="text-gray-400 hover:text-[#00ff] transition-colors footer-link">Home</a>
                     </li>
                     <li>
-                      <a href="#about"
-                        class="text-gray-400 hover:text-[#00ff] transition-colors footer-link">Sobre</a>
+                      <a href="#about" class="text-gray-400 hover:text-[#00ff] transition-colors footer-link">Sobre</a>
                     </li>
                     <li>
                       <a href="#portfolio"
